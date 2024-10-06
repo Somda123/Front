@@ -1,0 +1,75 @@
+/* Basic styling for the sections */
+section {
+    padding: 100px 20px;
+    height: 100vh;
+  }
+/*   
+  .hero {
+    background-color: #f4f4f4;
+  }
+  
+  .about {
+    background-color: #e0f7fa;
+  }
+  
+  .services {
+    background-color: #ffe0b2;
+  }
+  
+  .explore {
+    background-color: #c5e1a5;
+  }
+  
+  .contact {
+    background-color: #ffccbc;
+  }
+   */
+  /* Navbar buttons */
+  .navbar-position {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    /* background-color: #333; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+/*   
+  .nav-links {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-btn:hover {
+    background-color: #555;
+  }
+  
+  .book-now-btn {
+    background-color: #ff6f61;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .book-now-btn:hover {
+    background-color: #e64a19;
+  }
+   */
