@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const FormWrapper = styled.div`
   background-color: #87CEEB; 
+  // color: black;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
@@ -13,7 +14,7 @@ export const FormWrapper = styled.div`
   box-sizing: border-box;
    max-width: 450px;
   margin: 0 auto; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 1.9);
+  box-shadow: 0 4px 8px ;rgba(0, 0, 0, 1.9)
   margin-top: -10px;
   
 

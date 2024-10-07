@@ -1,7 +1,7 @@
 
 
 import React from "react";
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
 import TermsAndConditions from './components/TermsAndConditions'; 
 import LoginPage from "./components/LoginPage";
 import SignupPage from "./components/SignupPage";
@@ -10,19 +10,17 @@ import BookingForm from "./components/BookingForm";
 
 function App() {
   return (
-    <div>
-      <div>
-      <Header/>
-
-      </div>
+      <Router>
+      {/* <div> */}
       <Routes>
+        <Route path='/' element={<Header/>} />
         <Route path='/loginpage' element={<LoginPage/>} />
          <Route path='/signuppage' element={<SignupPage/>} />
          <Route path='/bookingform' element={<BookingForm/>} />
         <Route path="/terms" element={<TermsAndConditions />} />
-
-      </Routes>
-    </div>
+        </Routes>
+      {/* </div> */}
+    </Router>
   );
 }
 

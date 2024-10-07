@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import './BookingForm.css';
+import './BookingForm.css';
 // import logo from "../assets/logo.png"; 
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
@@ -96,7 +96,7 @@ const BookingForm = () => {
           </div>
         ) : (
           <>
-            <h2>Plan Your Stay With Us</h2>
+            <h2 className="h2">Plan Your Stay With Us</h2>
             <form onSubmit={handleSubmit}>
               <div className="form-group">
                 <input

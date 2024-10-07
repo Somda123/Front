@@ -7,9 +7,10 @@ const Footer = () => {
 
 
 
-  
+
   return (
     <footer className="footer">
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       {/* Top Section: Columns */}
       <div className="footer-columns">
         
@@ -61,6 +62,10 @@ const Footer = () => {
             <a href="https://linkedin.com" className="social-link"><FaLinkedinIn /></a>
             <a href="https://instagram.com" className="social-link"><FaInstagram /></a>
           </div>
+          <div className="contact-info">
+        <p>Email:<a href="mailto:circuitdantewada@example.com">circuitdantewada@example.com</a></p>
+        <p>Mobile: <a href="tel:+919876543210">+91 98765 43210</a></p>
+      </div>
         </div>
 
 

@@ -725,7 +725,7 @@ const BookingApp = () => {
             {[...Array(dayCount)].map((_, i) => {
               const currentDay = new Date(start);
               currentDay.setDate(start.getDate() + i);
-              return (
+              return  (
                 <th key={i}>
                   {currentDay.toLocaleString("en-US", {
                     weekday: "long",
@@ -787,6 +787,8 @@ const BookingApp = () => {
 
   return (
     <div className="container">
+        <h1>Check Availability</h1>
+
       <div className="room-availability">
         <label id="check" htmlFor="checkin">Check-in Date:</label>
         <input
@@ -811,10 +813,10 @@ const BookingApp = () => {
         </div>
       )}
 
-      <div id="dates-display">
+      {/* <div id="dates-display">
         {checkinDate && <p>Check-in Date: {new Date(checkinDate).toLocaleDateString()}</p>}
         {checkoutDate && <p>Check-out Date: {new Date(checkoutDate).toLocaleDateString()}</p>}
-      </div>
+      </div> */}
     </div>
   );
 };

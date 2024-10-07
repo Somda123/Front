@@ -9,13 +9,13 @@
   .footer-columns {
     display: flex;
     justify-content: center;  /* Center the columns */
-    gap: 20px;
+    /* gap: 20px; */
     flex-wrap: wrap;  /* Allows wrapping on smaller screens */
     text-align: center;  /* Centers the text inside each column */
   }
   
   .footer-column {
-    width: 18%;  /* Adjusted width to fit 5 columns */
+    width: 18%;  
     text-align: center;  /* Center text inside each column */
   }
   

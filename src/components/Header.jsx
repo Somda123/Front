@@ -194,7 +194,8 @@ import BookingApp from "./BookingApp";
 // import Main from "./components/Main";
 import Footer from "./Footer";
 // import Header from "./components/Header";
-import Slider from "./Explore";
+import Service from "./Service";
+import Explore from "./Explore";
 import ContactForm from "./ContactForm";
 import AboutUs from "./AboutUs";
 
@@ -259,10 +260,12 @@ function Header() {
         <li className="nav-item">
           <button onClick={() => scrollToSection(footerRef)} className="nav-link active" aria-current="page" href="/">Footer</button>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <button  onClick={handleBook} className="nav-link active book-now-btn" aria-current="page" href="/">Book Now</button>
-        </li>
+        </li> */}
       </ul>
+      <button  onClick={handleBook}  class="btn btn-outline-success" style={{marginRight:"200px"}} type="submit">Book Now</button>
+
       
     </div>
   </div>
@@ -298,57 +301,40 @@ function Header() {
         </ul>
         <button onClick={handleBook} className="book-now-btn">Book Now</button>
       </nav> */}
-
+<div>
+{/* <h1 className="App1" >Welcome to [Circuit House Dantewada]</h1> */}
+{/* <h4 className="App">Your comfort is our priority. Book your room now!</h4> */}
+</div>
       {/* Hero Section */}
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+      <h1 className="App1" >Welcome to [Circuit House Dantewada]</h1>
+     <br></br> <h4  style={{textAlign:"center"}} className="App">Your comfort is our priority. Book your room now!</h4>
+        <br></br><br></br><br></br><br></br> <br></br><br></br><br></br><br></br> <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
       <section ref={homeRef} className="hero">
         <div>
         <div className="hero-content">
-          <h1>Welcome to Circuit House Dantewada <span className="highlight">Hotel</span> . . .</h1>
+          <div></div>
+          {/* <h1>Welcome to Circuit House Dantewada <span className="highlight">Hotel</span> . . .</h1> */}
           <p>Where comfort meets luxury. Your perfect stay starts with just a click. Discover your home away from home!</p>
           <BookingApp/>
         </div>
         </div>
         
       </section>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+      <br></br><br></br> <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 
       {/* Services Section */}
       <section ref={servicesRef} className="services">
-        <h2>Our Services</h2>
-        <p>Explore the luxurious services we provide for our guests.</p>
+        {/* <h2>Our Services</h2> */}
+        <Service/>
       </section>
 
       {/* Explore Section */}
       <section ref={exploreRef} className="explore">
         {/* <h2>Explore</h2> */}
-        <Slider/>
+        <Explore/>
 
       </section>
-      <br></br>
-      <br></br>
+      <br></br><br></br>
 {/* About Section */}
 <section ref={aboutRef} className="about">
         <AboutUs/>
@@ -358,8 +344,7 @@ function Header() {
       <section ref={contactRef} className="contact">
         <ContactForm/>
       </section>
-      <br></br>
-      <br></br>
+      <br></br><br></br>
        {/* Footer Section */}
        <section ref={footerRef} className="footer">
         {/* <h2>Contact </h2> */}

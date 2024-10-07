@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Aboutus.css';
-import image3 from '../assets/Image3.jpeg';
+// import image3 from '../assets/Image3.jpeg';
 
 function AboutUs() {
   const [isLoaded, setIsLoaded] = useState(false); // For animation effects
@@ -15,7 +15,7 @@ function AboutUs() {
       <div className={`about-content ${isLoaded ? 'loaded' : ''}`}>
         <div className="image-section">
           <img
-            src={{image3}}                   // Replace with your image URL
+            src='/images/Image3.jpeg'               // Replace with your image URL
             alt="About Us"
             className="about-image"
           />
